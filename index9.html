@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coffee App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      background-color: black;
+      font-family: 'Poppins', sans-serif;
+      height: 100%;
+    }
+
+    .main-screen {
+      position: relative;
+      background: url('./images/coffe.avif') no-repeat center center;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 60px 24px;
+      text-align: center;
+      color: white;
+      overflow: hidden;
+    }
+
+    .oscuro {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .main-title {
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 1.5;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    .sub-title {
+      font-size: 15px;
+      font-weight: 400;
+      color: #cfcfcf;
+      margin-bottom: 40px;
+    }
+
+    .btn-coffee {
+      background-color: #d17a45;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      padding: 16px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .btn-coffee:hover {
+      background-color: #b7612d;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-screen">
+    <div class="oscuro"></div>
+    <div class="content">
+      <div class="main-title">
+        Coffee so good,<br>
+        your taste buds<br>
+        will love it.
+      </div>
+      <div class="sub-title">
+        The best grain, the finest roast,<br>
+        the powerful flavor.
+      </div>
+      <button class="btn btn-coffee w-100">Get Started</button>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
